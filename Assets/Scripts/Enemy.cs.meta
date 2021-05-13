@@ -3,7 +3,10 @@ guid: 43c85b386c45a8747931d165e0ff42e6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - enemyManager: {instanceID: 0}
+  - gunHitEffect: {fileID: 3210270170774671248, guid: 0dcd65a95f129dd40b38c3a00a90e609,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
