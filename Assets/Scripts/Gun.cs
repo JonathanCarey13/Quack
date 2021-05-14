@@ -24,6 +24,10 @@ public class Gun : MonoBehaviour
     public float fireRate = 1f;
     private float nextTimeToFire;
 
+    // Gun Ammo
+    public int maxAmmo;
+    private int ammo;
+
     void Start()
     {
         gunTrigger = GetComponent<BoxCollider>();
@@ -33,7 +37,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.time > nextTimeToFire)
+        if (Input.GetMouseButtonDown(0) && Time.time > nextTimeToFire && ammo > 0)
         {
             Fire();
         }
@@ -89,8 +93,20 @@ public class Gun : MonoBehaviour
                 }
             }
         }
-
+        // reset timer
         nextTimeToFire = Time.time + fireRate;
+
+        // deduct 1 ammo
+        ammo--;
+    }
+
+    public void GiveAmmo(int amount, GameObject pickup)
+    {
+        if (ammo < maxAmmo)
+        {
+            ammo += amount;
+            Destroy(pickup);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
