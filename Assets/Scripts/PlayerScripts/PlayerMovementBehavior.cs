@@ -10,6 +10,7 @@ public class PlayerMovementBehavior : MonoBehaviour
 
     private CharacterController characterController;
     public Animator cameraAnimation;
+    //public Animator gunAnimation;         adding this breaks everything
     private bool isWalking;
 
     private Vector3 inputVector;
@@ -27,6 +28,7 @@ public class PlayerMovementBehavior : MonoBehaviour
         MovePlayer();
 
         cameraAnimation.SetBool("isWalking", isWalking);
+        //gunAnimation.SetBool("isWalking", isWalking);             adding this breaks everything
     }
 
     void GetInput()
