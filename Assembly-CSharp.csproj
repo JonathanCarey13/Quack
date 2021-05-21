@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerBehavior.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovementBehavior.cs" />
+    <Compile Include="Assets\Scripts\SettingsMenu.cs" />
     <Compile Include="Assets\Scripts\SpriteRotator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
