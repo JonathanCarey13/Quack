@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\ItemPickup.cs" />
     <Compile Include="Assets\Scripts\KeyPickup.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\MouseMovementBehavior.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerBehavior.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerInventory.cs" />

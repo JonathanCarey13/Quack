@@ -20,9 +20,13 @@ public class MouseMovementBehavior : MonoBehaviour
 
     void Update()
     {
-        GetInput();
-        ModifyInput();
-        MovePlayer();
+        // stops the player from looking left or right
+        if (!PauseMenu.GameIsPaused)
+        {
+            GetInput();
+            ModifyInput();
+            MovePlayer();
+        }
     }
 
     void GetInput()

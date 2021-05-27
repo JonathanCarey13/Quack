@@ -38,9 +38,13 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && Time.time > nextTimeToFire && ammo > 0)
+        // prevents the gunshot functions from working while paused
+        if (!PauseMenu.GameIsPaused)
         {
-            Fire();
+            if (Input.GetMouseButtonDown(0) && Time.time > nextTimeToFire && ammo > 0)
+            {
+                Fire();
+            }
         }
     }
 
