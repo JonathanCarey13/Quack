@@ -90,4 +90,14 @@ public class PlayerBehavior : MonoBehaviour
         }
     }
 
+    // For now I am only going to have 1 type of enemy just called enemy that all deal the same damage, I may add other enemies in the future that deal other damage values
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name.Contains("Enemy"))
+        {
+            DamagePlayer(15);
+            Debug.Log("Player hurt.");
+        }
+    }
+
 }

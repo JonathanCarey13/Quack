@@ -27,4 +27,5 @@ public class Enemy : MonoBehaviour
         Instantiate(gunHitEffect, transform.position, Quaternion.identity);
         enemyHealth -= damage;
     }
+
 }
